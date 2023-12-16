@@ -8,16 +8,16 @@ function updateCounterValue(){
     counterValue.textContent = counter;
 }
 
-function decrement() {
+function handlerDecrement() {
     counter -=1;
     updateCounterValue();
 }
 
-function increment() {
+function handlerIncrement() {
     counter +=1;
     updateCounterValue();
 }
-decrementBtn.addEventListener('click', decrement);
-incrementBtn.addEventListener('click', increment);
+decrementBtn.addEventListener('click', handlerDecrement);
+incrementBtn.addEventListener('click', handlerIncrement);
 
 updateCounterValue();
